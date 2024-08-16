@@ -1,0 +1,17 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.title img {
+  height: 70px;
+  width: 70px;
+}
+
+.title h1 {
+  font-weight: bold;
+  font-size: 42px;
+  color: var(--blue-primary-color);
+}

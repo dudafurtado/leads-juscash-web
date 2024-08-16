@@ -1,0 +1,33 @@
+.button {
+  height: 36px;
+  width: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  color: var(--white-primary-color);
+}
+
+.button-new-account {
+  align-self: center;
+
+  background-color: var(--green-primary-color);
+}
+
+.button-login {
+  align-self: center;
+
+  background-color: var(--blue-primary-color);
+}
+
+.button-cancel {
+  background-color: var(--bs-danger);
+}
+
+.button-save,
+.button-new-lead {
+  background-color: var(--bs-blue);
+}

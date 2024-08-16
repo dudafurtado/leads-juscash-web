@@ -1,0 +1,9 @@
+.text-blue {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--blue-primary-color);
+
+  margin: 5px 24px 5px 0;
+
+  cursor: pointer;
+}
