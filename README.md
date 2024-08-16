@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Desafio de Desenvolvimento de Aplicação - Gestão de Leads
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este desafio tem como objetivo demonstrar as habilidades em desenvolvimento de aplicações FrontEnd. A aplicação desenvolvida é responsável por gerenciar a manutenção de Leads, implementando uma interface de usuário que segue uma arquitetura previamente definida.
 
-## Available Scripts
+## Para acessar o projeto
 
-In the project directory, you can run:
+- **Código Fonte:** [Repositório](https://github.com/dudafurtado/leads-juscash-web)
+- **Persistência:** [Deploy]<https://leads-juscash-web.vercel.app/>
+  <https://leads-juscash-web-git-main-dudafurtados-projects.vercel.app/>
+  <https://leads-juscash-jx9yi1hmu-dudafurtados-projects.vercel.app/>
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Framework:** React
+- **Persistência:** LocalStorage do navegador
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Funcionalidades Principais
 
-### `npm test`
+- **Cadastro de Leads:** A aplicação permite a criação de novos Leads com campos obrigatórios e validados, utilizando uma interface intuitiva e funcional.
+- **Gerenciamento de Leads:** Os Leads podem ser gerenciados através de uma tabela dividida em três status: Cliente Potencial, Dados Confirmados, e Análise do Lead. Os Leads podem ser arrastados entre as colunas, alterando seu status.
+- **Validação de Formulários:** Todos os campos obrigatórios são validados, com critérios específicos para campos como "Password", que deve conter ao menos 8 caracteres, incluindo um caracter especial, um número e um alfanumérico.
+- **Modal de Visualização:** Ao clicar no nome de um Lead, uma modal é aberta com as informações detalhadas e preenchidas, permitindo a edição e visualização dos dados.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Estrutura do Projeto
 
-### `npm run build`
+- **Componentes:** Os componentes são organizados seguindo o princípio de responsabilidade única, garantindo coesão e separação de responsabilidades. Componentes de apresentação gráfica (GUI) são mantidos em arquivos separados de Controladores e Serviços.
+- **Arquitetura:** A arquitetura da aplicação segue uma abordagem modular, onde cada componente é responsável por uma parte específica da aplicação. A visualização, regras de apresentação e fluxo de comportamento são implementados em componentes separados.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Regras de Negócio
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Fluxo de Leads:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - Um Lead pode ser criado com o status "Cliente Potencial".
+  - Um Lead com status "Cliente Potencial" pode ser movido para "Dados Confirmados".
+  - Um Lead com status "Dados Confirmados" pode ser movido para "Análise do Lead".
+  - Não é permitido mover Leads em ordem inversa ou pular status.
 
-### `npm run eject`
+- **Cadastro de Lead:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  - Todos os campos são obrigatórios.
+  - A senha deve ter ao menos 8 caracteres, incluindo um especial, um número, e um alfanumérico.
+  - Senha e confirmação de senha devem ser iguais.
+  - Opções de oportunidades podem ser marcadas/desmarcadas individualmente através de CheckBoxes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Persistência:**
+  - Os dados são persistidos no LocalStorage do navegador, garantindo que os Leads e usuários criados sejam mantidos entre sessões.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Como Rodar o Projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Requisitos
 
-## Learn More
+- Node.js (versão LTS recomendada)
+- Gerenciador de pacotes npm ou yarn
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Passos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Clone o repositório:**
 
-### Code Splitting
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Instale as dependências:**
 
-### Analyzing the Bundle Size
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Inicie a aplicação:**
 
-### Making a Progressive Web App
+   ```bash
+   npm start
+   # ou
+   yarn start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. **Acesse a aplicação:**
+   Abra o navegador e acesse <http://localhost:3000>.
 
-### Advanced Configuration
+## Deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+A aplicação está pronta para ser deployada na Vercel. Para realizar o deploy, siga os passos abaixo:
 
-### Deployment
+### Conecte seu repositório na Vercel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Acesse o site da Vercel e faça login.
+2. Crie um novo projeto, conectando ao seu repositório GitHub.
+3. A Vercel detectará automaticamente o framework utilizado e as configurações necessárias.
 
-### `npm run build` fails to minify
+### Realize o Deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clique em "Deploy" e aguarde a publicação da sua aplicação.
+2. Compartilhe o link gerado para acesso à aplicação em produção.
+
+## Diferenciais
+
+- **Documentação Técnica:** Para um diferencial, foi criada uma documentação técnica consolidada das regras de negócio em formato PDF.
+- **Fidelidade ao Protótipo:** A aplicação busca atingir a maior fidelidade possível ao protótipo fornecido.
