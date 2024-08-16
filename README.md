@@ -13,6 +13,7 @@ Este desafio tem como objetivo demonstrar as habilidades em desenvolvimento de a
 
 - **Framework:** React
 - **Persistência:** LocalStorage do navegador
+-  **Bibliotecas:** NanoId, CryptoJs, e React Hot Toast
 
 ## Funcionalidades Principais
 
@@ -82,18 +83,8 @@ Este desafio tem como objetivo demonstrar as habilidades em desenvolvimento de a
 
 ## Deploy
 
-A aplicação está pronta para ser deployada na Vercel. Para realizar o deploy, siga os passos abaixo:
+A aplicação está pronta e deployada na Vercel.
 
-### Conecte seu repositório na Vercel
-
-1. Acesse o site da Vercel e faça login.
-2. Crie um novo projeto, conectando ao seu repositório GitHub.
-3. A Vercel detectará automaticamente o framework utilizado e as configurações necessárias.
-
-### Realize o Deploy
-
-1. Clique em "Deploy" e aguarde a publicação da sua aplicação.
-2. Compartilhe o link gerado para acesso à aplicação em produção.
 
 ## Diferenciais
 
