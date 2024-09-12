@@ -87,5 +87,5 @@ A aplicação está pronta e deployada na Vercel.
 
 ## Diferenciais
 
-- **Documentação Técnica:** Para um diferencial, foi criada uma documentação técnica consolidada das regras de negócio em formato PDF.
+- **Documentação Técnica:** Para um diferencial, foi criada uma documentação técnica consolidada das regras de negócio aqui no Readme.
 - **Fidelidade ao Protótipo:** A aplicação busca atingir a maior fidelidade possível ao protótipo fornecido.
