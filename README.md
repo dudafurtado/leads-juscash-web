@@ -5,15 +5,15 @@ Este desafio tem como objetivo demonstrar as habilidades em desenvolvimento de a
 ## Para acessar o projeto
 
 - **Código Fonte:** [Repositório](https://github.com/dudafurtado/leads-juscash-web)
-- **Website:** [Deploy](<https://leads-juscash-web.vercel.app/>)
-  [Deploy 2](<https://leads-juscash-web-git-main-dudafurtados-projects.vercel.app/>)
-  [Deploy 3](<https://leads-juscash-jx9yi1hmu-dudafurtados-projects.vercel.app/>)
+- **Website:** [Deploy](https://leads-juscash-web.vercel.app/)
+  [Deploy 2](https://leads-juscash-web-git-main-dudafurtados-projects.vercel.app/)
+  [Deploy 3](https://leads-juscash-jx9yi1hmu-dudafurtados-projects.vercel.app/)
 
 ## Tecnologias Utilizadas
 
 - **Framework:** React
 - **Persistência:** LocalStorage do navegador
--  **Bibliotecas:** NanoId, CryptoJs, e React Hot Toast
+- **Bibliotecas:** NanoId, CryptoJs, e React Hot Toast
 
 ## Funcionalidades Principais
 
@@ -84,7 +84,6 @@ Este desafio tem como objetivo demonstrar as habilidades em desenvolvimento de a
 ## Deploy
 
 A aplicação está pronta e deployada na Vercel.
-
 
 ## Diferenciais
 
