@@ -37,6 +37,7 @@ export default function Modal() {
         status: 'potencial-client',
       },
     ]);
+    toast.success('Lead criado com sucesso.');
     setOpenModalNewLead(false);
     clearForm();
   }

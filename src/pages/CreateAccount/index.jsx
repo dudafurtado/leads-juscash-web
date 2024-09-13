@@ -44,6 +44,7 @@ export default function CreateAccount() {
         password: encryptedPassword,
       })
     );
+    toast.success('Conta criada com sucesso.');
     navigate('/login');
     clearForm();
   }

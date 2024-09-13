@@ -26,6 +26,7 @@ export default function Login() {
     }
 
     setItem('authToken', 'authorized');
+    toast.success('Usuário logado com sucesso.');
     navigate('/home');
     clearForm();
   }
