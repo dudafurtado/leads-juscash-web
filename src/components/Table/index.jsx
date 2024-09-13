@@ -93,12 +93,16 @@ export default function Table() {
           {leadAnalysis.map((lead) => (
             <div key={lead.id}>
               <li onClick={() => showLead(lead.id)}>{lead.name}</li>
-              <img
-                src={ArrowLeftIcon}
-                alt="Seta para o lado esquerdo indicando mudança do nome de lugar"
-                className="arrow-left-icon"
-                onClick={() => handleLeadChangeList(lead.id)}
-              />
+              {lead.status !== 'lead-analysis' ? (
+                <img
+                  src={ArrowLeftIcon}
+                  alt="Seta para o lado esquerdo indicando mudança do nome de lugar"
+                  className="arrow-left-icon"
+                  onClick={() => handleLeadChangeList(lead.id)}
+                />
+              ) : (
+                ''
+              )}
             </div>
           ))}
         </ul>
